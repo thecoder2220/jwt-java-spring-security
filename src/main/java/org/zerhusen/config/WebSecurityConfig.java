@@ -38,6 +38,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Value("${jwt.header}")
     private String tokenHeader;
 
+    // jwt.route.authentication.path = auth
     @Value("${jwt.route.authentication.path}")
     private String authenticationPath;
 
