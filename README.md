@@ -1,3 +1,5 @@
+Remarque : jwt.route.authentication.path = auth qui devient users/authenticate
+
 # JWT Spring Security Demo
 
 ![Screenshot from running application](etc/screenshot-jwt-spring-security-demo.png?raw=true "Screenshot JWT Spring Security Demo")
