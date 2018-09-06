@@ -25,7 +25,9 @@ $(function () {
         localStorage.removeItem(TOKEN_KEY);
     }
 
-    function doLogin(loginData) {
+    function doLogin(loginData) { // loginData = {username: "test", password: "test" }
+
+        debugger
         $.ajax({
             url: "/users/authenticate",
             type: "POST",
