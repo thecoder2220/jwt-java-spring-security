@@ -27,7 +27,15 @@ $(function () {
 
     function doLogin(loginData) { // loginData = {username: "test", password: "test" }
 
+        let username = loginData.username
+        let password = loginData.password
+
         debugger
+        const requestOptions = {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ username, password })
+        };
         $.ajax({
             url: "/users/authenticate",
             type: "POST",
